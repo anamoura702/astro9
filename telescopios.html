@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conheça os Telescópios</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-image: url('imagens/fundo2.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+      background-color: rgba(17, 17, 17, 0.8);
+      padding: 15px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+    }
+
+    #telescopios {
+      flex: 1;
+      padding: 60px 20px;
+      background-image: url('imagens/espaco.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    #telescopios h2 {
+      text-align: center;
+      color: orange;
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+
+    .grid-telescopios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .caixa-telescopio {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .caixa-telescopio img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .caixa-telescopio a button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      font-size: 16px;
+      background-color: orange;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .caixa-telescopio a button:hover {
+      background-color: #ddd;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      border-top: 2px solid #333;
+      margin-top: auto;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="telescopios.html">Telescópios</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+  </nav>
+  <section id="telescopios">
+
+    <h2>Conheça os Telescópios</h2>
+    <div class="grid-telescopios">
+      <div class="caixa-telescopio">
+        <img src="imagens/telescopio_colleti.jpg" alt="TELESCOPIO COLETTI">
+        <a href="telescopio_colleti.html"><button>COLETTI</button></a>
+      </div>
+      <div class="caixa-telescopio"> 
+        <img src="imagens/celestronstar.jpg" alt="Refrator">
+        <a href="telescopio_celestronstar.html">
+          <button>CELESTRON STARBRIGHT</button></a>
+
+      </div>
+      <div class="caixa-telescopio">
+        <img src="imagens/c8-N.jpg" alt="Catadióptrico">
+        <a href="telescopio_celestronC8.html"><button>CELESTRON C8-N</button></a>
+      </div>
+    </div>
+  </section>
+  <footer>&copy; 2025 AstroIfro. Todos os direitos reservados.</footer>
+
+</body>
+
+</html>
